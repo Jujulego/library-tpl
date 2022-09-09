@@ -8,5 +8,6 @@
 .pnp.*
 
 # Generated files
+dist
 *.log
 *.pid
