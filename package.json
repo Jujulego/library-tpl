@@ -1,0 +1,9 @@
+{
+  "name": "library-tpl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Jujulego/library-tpl.git",
+  "author": "Julien Capellari <julien.capellari@gmail.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.3"
+}
