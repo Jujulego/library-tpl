@@ -1293,10 +1293,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.58":
-  version: 16.11.58
-  resolution: "@types/node@npm:16.11.58"
-  checksum: efdf14c62e6c1a8e758416aaa3ae4b81015ffd4e1f31c05680d1242817ba23f0b4b1345886fe5aeb3c05d818bcaed1a7af4d637e7cca5723a5e4ac8b759d3ace
+"@types/node@npm:16.11.60":
+  version: 16.11.60
+  resolution: "@types/node@npm:16.11.60"
+  checksum: 8c9670801f736a06f5ec8dd4ade00cb8d822f1dd168ad255909af6f6439a50abc231fa684418810002fdcd4c282804f56ceee6e7d3cd3209736c4fad115f4b2c
   languageName: node
   linkType: hard
 
@@ -5105,7 +5105,7 @@ __metadata:
     "@types/gulp": 4.0.9
     "@types/gulp-sourcemaps": 0.0.35
     "@types/jest": 29.0.0
-    "@types/node": 16.11.58
+    "@types/node": 16.11.60
     "@typescript-eslint/eslint-plugin": 5.36.2
     "@typescript-eslint/parser": 5.36.2
     browserslist: 4.21.3
