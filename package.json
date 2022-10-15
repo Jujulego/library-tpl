@@ -43,7 +43,7 @@
     "@types/gulp": "4.0.9",
     "@types/gulp-sourcemaps": "0.0.35",
     "@types/jest": "29.1.2",
-    "@types/node": "16.11.65",
+    "@types/node": "16.11.66",
     "@typescript-eslint/eslint-plugin": "5.40.0",
     "@typescript-eslint/parser": "5.40.0",
     "browserslist": "4.21.4",
