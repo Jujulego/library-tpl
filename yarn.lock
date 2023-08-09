@@ -5,6 +5,27 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"---@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "---@workspace:."
+  dependencies:
+    "@jujulego/jill": 2.3.0
+    "@microsoft/eslint-formatter-sarif": 3.0.0
+    "@swc/cli": 0.1.62
+    "@swc/core": 1.3.75
+    "@types/node": 18.17.4
+    "@typescript-eslint/eslint-plugin": 6.3.0
+    "@typescript-eslint/parser": 6.3.0
+    "@vitest/coverage-v8": 0.34.1
+    eslint: 8.46.0
+    eslint-plugin-vitest: 0.2.8
+    rollup-plugin-swc3: 0.9.1
+    shx: 0.3.4
+    typescript: 5.1.6
+    vitest: 0.34.1
+  languageName: unknown
+  linkType: soft
+
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
   version: 1.2.6
   resolution: "@aashutoshrathi/word-wrap@npm:1.2.6"
@@ -907,10 +928,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.18.40":
-  version: 16.18.40
-  resolution: "@types/node@npm:16.18.40"
-  checksum: a683930491b4fd7cb2dc7684e32bbeedc4a83fb1949a7b15ea724fbfaa9988cec59091f169a3f1090cb91992caba8c1a7d50315b2c67c6e2579a3788bb09eec4
+"@types/node@npm:18.17.4":
+  version: 18.17.4
+  resolution: "@types/node@npm:18.17.4"
+  checksum: d4c458202d82c999f38d85ca9ae8a2d3e521645c7f1b908cd6a0303d0e13c7d5eb3f888c41f584ba029ecf802d0a0005b7816c149400371a3c035abc4bd9a4c5
   languageName: node
   linkType: hard
 
@@ -3128,27 +3149,6 @@ __metadata:
   checksum: 12c5021c859bd0f5248561bf139121f0358285ec545ebf48bb3d346820d5c61a4309535c7f387ed7d84361cf821e124ce346c6b7cef8ee09a67c1473b46d0fc4
   languageName: node
   linkType: hard
-
-"library-tpl@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "library-tpl@workspace:."
-  dependencies:
-    "@jujulego/jill": 2.3.0
-    "@microsoft/eslint-formatter-sarif": 3.0.0
-    "@swc/cli": 0.1.62
-    "@swc/core": 1.3.75
-    "@types/node": 16.18.40
-    "@typescript-eslint/eslint-plugin": 6.3.0
-    "@typescript-eslint/parser": 6.3.0
-    "@vitest/coverage-v8": 0.34.1
-    eslint: 8.46.0
-    eslint-plugin-vitest: 0.2.8
-    rollup-plugin-swc3: 0.9.1
-    shx: 0.3.4
-    typescript: 5.1.6
-    vitest: 0.34.1
-  languageName: unknown
-  linkType: soft
 
 "lines-and-columns@npm:^1.1.6":
   version: 1.2.4
