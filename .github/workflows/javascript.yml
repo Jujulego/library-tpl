@@ -2,10 +2,10 @@ name: 'Javascript'
 
 on:
   push:
-    branches: [ master ]
+    branches: [ latest, next ]
 
   pull_request:
-    branches: [ master ]
+    branches: [ latest, next ]
 
 concurrency:
   group: javascript-${{ github.ref }}
