@@ -8,6 +8,7 @@
 .pnp.*
 
 # Generated files
+.idea
 .vitest
 coverage
 dist
