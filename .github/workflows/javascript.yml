@@ -1,11 +1,14 @@
-name: 'Publish'
+name: 'Javascript'
 
 on:
   push:
     branches: [ master ]
 
+  pull_request:
+    branches: [ master ]
+
 concurrency:
-  group: publish
+  group: javascript-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -13,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v3
 
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v3.6.0
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: yarn
@@ -35,11 +38,15 @@ jobs:
   lint:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      security-events: write
+
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v3
 
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v3.6.0
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: yarn
@@ -48,16 +55,23 @@ jobs:
         run: yarn install --immutable
 
       - name: Lint
-        run: yarn lint
+        continue-on-error: true
+        run: yarn lint -f @microsoft/sarif -o eslint-results.sarif
+
+      - name: Upload analysis results to GitHub
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: eslint-results.sarif
+          wait-for-processing: true
 
   tests:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v3
 
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v3.6.0
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: yarn
@@ -65,8 +79,11 @@ jobs:
       - name: Install
         run: yarn install --immutable
 
-      - name: Test
-        run: yarn test
+      - name: Type check tests
+        run: yarn test:types
+
+      - name: Run tests
+        run: yarn test --coverage
 
       - uses: actions/upload-artifact@v3
         with:
@@ -74,15 +91,18 @@ jobs:
           path: coverage
 
   publish:
+    if: ${{ github.event_name == 'push' }}
+    name: Publish to npm
+
     runs-on: ubuntu-latest
     environment: npm
     needs: [ lint, build, tests ]
 
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v3
 
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v3.6.0
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
           registry-url: https://registry.npmjs.org
@@ -104,10 +124,10 @@ jobs:
   sonarcloud:
     if: ${{ !startsWith(github.head_ref, 'renovate/') }}
     runs-on: ubuntu-latest
-    needs: [ tests, publish ]
+    needs: [ tests ]
 
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -131,7 +151,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-  tag:
+  release:
+    if: ${{ github.event_name == 'push' }}
+
     runs-on: ubuntu-latest
     needs: [ publish ]
 
@@ -139,7 +161,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v3
 
       - name: Read package.json
         id: info

@@ -2,10 +2,16 @@ changelog:
   categories:
     - title: ":tada: Features"
       labels:
-        - '*'
-      exclude:
-        labels:
-          - dependencies
+        - enhancement
+
+    - title: ":bug: Bugfixes"
+      labels:
+        - bug
+
     - title: ":package: Dependencies"
       labels:
         - dependencies
+
+    - title: ":space_invader: Other"
+      labels:
+        - "*"

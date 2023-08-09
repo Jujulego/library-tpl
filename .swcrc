@@ -1,19 +1,12 @@
 {
   "jsc": {
-    "target": "es2022",
+    "target": "esnext",
     "parser": {
       "syntax": "typescript"
-    },
-    "paths": {
-      "@/src": ["./src"]
     }
   },
   "module": {
     "type": "es6"
   },
-  "env": {
-    "targets": [
-      "defaults"
-    ]
-  }
+  "sourceMaps": true
 }
