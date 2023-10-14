@@ -10,8 +10,8 @@ __metadata:
   resolution: "---@workspace:."
   dependencies:
     "@jujulego/jill": 2.3.3
+    "@jujulego/vite-plugin-swc": 1.0.0
     "@microsoft/eslint-formatter-sarif": 3.0.0
-    "@rollup/plugin-swc": 0.2.1
     "@swc/cli": 0.1.62
     "@swc/core": 1.3.93
     "@types/node": 16.18.58
@@ -455,6 +455,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jujulego/vite-plugin-swc@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@jujulego/vite-plugin-swc@npm:1.0.0"
+  peerDependencies:
+    "@swc/core": ^1.3.0
+  checksum: e1c8230b0fa9cf8d7d25b386e8c5e98f0dedb1512540a2896d1976d3836a3bc2c21df54751298b8db14a833ecad30f9f613575c18b007a3ebdfd80c7945df105
+  languageName: node
+  linkType: hard
+
 "@microsoft/eslint-formatter-sarif@npm:3.0.0":
   version: 3.0.0
   resolution: "@microsoft/eslint-formatter-sarif@npm:3.0.0"
@@ -527,38 +536,6 @@ __metadata:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
   checksum: 52dc02259d98da517fae4cb3a0a3850227bdae4939dda1980b788a7670636ca2b4a01b58df03dd5f65c1e3cb70c50fa8ce5762b582b3f499ec30ee5ce1fd9380
-  languageName: node
-  linkType: hard
-
-"@rollup/plugin-swc@npm:0.2.1":
-  version: 0.2.1
-  resolution: "@rollup/plugin-swc@npm:0.2.1"
-  dependencies:
-    "@rollup/pluginutils": ^5.0.1
-    smob: ^1.4.0
-  peerDependencies:
-    "@swc/core": ^1.3.0
-    rollup: ^3.0.0||^4.0.0
-  peerDependenciesMeta:
-    rollup:
-      optional: true
-  checksum: aa56abab55ff8dde68e9436fc2c4b8f08f3967e8511ed034efd208fd859c70c4d23947052be62685db7d7de566fb8bdf6e9ee063b76dc620952f54cfc3e494c5
-  languageName: node
-  linkType: hard
-
-"@rollup/pluginutils@npm:^5.0.1":
-  version: 5.0.4
-  resolution: "@rollup/pluginutils@npm:5.0.4"
-  dependencies:
-    "@types/estree": ^1.0.0
-    estree-walker: ^2.0.2
-    picomatch: ^2.3.1
-  peerDependencies:
-    rollup: ^1.20.0||^2.0.0||^3.0.0
-  peerDependenciesMeta:
-    rollup:
-      optional: true
-  checksum: 893d5805ac4121fc704926963a0ae4e79e9e2bc8d736c3b28499ab69a404cce5119ca3a4e0c3d3a81d62f1beb3966f35285c36935d94b061794f26e94fed4cd1
   languageName: node
   linkType: hard
 
@@ -778,13 +755,6 @@ __metadata:
   version: 4.3.5
   resolution: "@types/chai@npm:4.3.5"
   checksum: c8f26a88c6b5b53a3275c7f5ff8f107028e3cbb9ff26795fff5f3d9dea07106a54ce9e2dce5e40347f7c4cc35657900aaf0c83934a25a1ae12e61e0f5516e431
-  languageName: node
-  linkType: hard
-
-"@types/estree@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "@types/estree@npm:1.0.1"
-  checksum: e9aa175eacb797216fafce4d41e8202c7a75555bc55232dee0f9903d7171f8f19f0ae7d5191bb1a88cb90e65468be508c0df850a9fb81b4433b293a5a749899d
   languageName: node
   linkType: hard
 
@@ -2041,13 +2011,6 @@ __metadata:
   version: 5.3.0
   resolution: "estraverse@npm:5.3.0"
   checksum: 072780882dc8416ad144f8fe199628d2b3e7bbc9989d9ed43795d2c90309a2047e6bc5979d7e2322a341163d22cfad9e21f4110597fe487519697389497e4e2b
-  languageName: node
-  linkType: hard
-
-"estree-walker@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "estree-walker@npm:2.0.2"
-  checksum: 6151e6f9828abe2259e57f5fd3761335bb0d2ebd76dc1a01048ccee22fabcfef3c0859300f6d83ff0d1927849368775ec5a6d265dde2f6de5a1be1721cd94efc
   languageName: node
   linkType: hard
 
@@ -4150,13 +4113,6 @@ __metadata:
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
   checksum: b5167a7142c1da704c0e3af85c402002b597081dd9575031a90b4f229ca5678e9a36e8a374f1814c8156a725d17008ae3bde63b92f9cfd132526379e580bec8b
-  languageName: node
-  linkType: hard
-
-"smob@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "smob@npm:1.4.0"
-  checksum: f693b42698c90262dee4324eae635ea2aa16782161274b47417f87e353880487cdea8e6d9d07fb9b2a0e0df472ef0c5a1bfc07395edd8acfad7062797c1293ca
   languageName: node
   linkType: hard
 
