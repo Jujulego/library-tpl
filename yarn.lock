@@ -10,7 +10,7 @@ __metadata:
   resolution: "---@workspace:."
   dependencies:
     "@jujulego/jill": 2.3.3
-    "@jujulego/vite-plugin-swc": 1.0.0
+    "@jujulego/vite-plugin-swc": 1.1.0
     "@microsoft/eslint-formatter-sarif": 3.0.0
     "@swc/cli": 0.1.62
     "@swc/core": 1.3.93
@@ -455,12 +455,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jujulego/vite-plugin-swc@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@jujulego/vite-plugin-swc@npm:1.0.0"
+"@jujulego/vite-plugin-swc@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@jujulego/vite-plugin-swc@npm:1.1.0"
   peerDependencies:
     "@swc/core": ^1.3.0
-  checksum: e1c8230b0fa9cf8d7d25b386e8c5e98f0dedb1512540a2896d1976d3836a3bc2c21df54751298b8db14a833ecad30f9f613575c18b007a3ebdfd80c7945df105
+  checksum: c59762f613a976d64ab4cb03bec9acfac2769bae016eb0d1c6d1e7dfaf0c9ad1cc3d7e6a3842e5074a25b4274bf4d099598b9a2acbcf819f247eab26192b9f56
   languageName: node
   linkType: hard
 
