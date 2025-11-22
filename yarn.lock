@@ -5,30 +5,6 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"---@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "---@workspace:."
-  dependencies:
-    "@eslint/js": "npm:9.39.1"
-    "@jujulego/jill": "npm:2.5.2"
-    "@jujulego/vite-plugin-swc": "npm:1.2.1"
-    "@microsoft/eslint-formatter-sarif": "npm:3.1.0"
-    "@swc/cli": "npm:0.7.9"
-    "@swc/core": "npm:1.15.3"
-    "@swc/helpers": "npm:^0.5.0"
-    "@vitest/coverage-v8": "npm:4.0.13"
-    "@vitest/eslint-plugin": "npm:1.4.3"
-    eslint: "npm:9.39.1"
-    jiti: "npm:2.6.1"
-    shx: "npm:0.3.4"
-    typescript: "npm:5.9.3"
-    typescript-eslint: "npm:8.47.0"
-    vite: "npm:7.2.4"
-    vite-tsconfig-paths: "npm:5.1.4"
-    vitest: "npm:4.0.13"
-  languageName: unknown
-  linkType: soft
-
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
   version: 1.2.6
   resolution: "@aashutoshrathi/word-wrap@npm:1.2.6"
@@ -563,6 +539,31 @@ __metadata:
   checksum: 10c0/69198c8c227938c434d2a81e54638aad14b3ff5bbcf5902a99dead8fc17f0e495948a458369a554c77dbc73b20d1d678a785439034dd6decb65a3f704fcc4327
   languageName: node
   linkType: hard
+
+"@jujulego/library-tpl@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@jujulego/library-tpl@workspace:."
+  dependencies:
+    "@eslint/js": "npm:9.39.1"
+    "@jujulego/jill": "npm:2.5.2"
+    "@jujulego/vite-plugin-swc": "npm:1.2.1"
+    "@microsoft/eslint-formatter-sarif": "npm:3.1.0"
+    "@swc/cli": "npm:0.7.9"
+    "@swc/core": "npm:1.15.3"
+    "@swc/helpers": "npm:^0.5.0"
+    "@types/node": "npm:24.10.1"
+    "@vitest/coverage-v8": "npm:4.0.13"
+    "@vitest/eslint-plugin": "npm:1.4.3"
+    eslint: "npm:9.39.1"
+    jiti: "npm:2.6.1"
+    shx: "npm:0.3.4"
+    typescript: "npm:5.9.3"
+    typescript-eslint: "npm:8.47.0"
+    vite: "npm:7.2.4"
+    vite-tsconfig-paths: "npm:5.1.4"
+    vitest: "npm:4.0.13"
+  languageName: unknown
+  linkType: soft
 
 "@jujulego/logger@npm:^0.2.2, @jujulego/logger@npm:^0.2.4":
   version: 0.2.4
@@ -1267,6 +1268,15 @@ __metadata:
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
   checksum: 10c0/a996a745e6c5d60292f36731dd41341339d4eeed8180bb09226e5c8d23759067692b1d88e5d91d72ee83dfc00d3aca8e7bd43ea120516c17922cbcb7c3e252db
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:24.10.1":
+  version: 24.10.1
+  resolution: "@types/node@npm:24.10.1"
+  dependencies:
+    undici-types: "npm:~7.16.0"
+  checksum: 10c0/d6bca7a78f550fbb376f236f92b405d676003a8a09a1b411f55920ef34286ee3ee51f566203920e835478784df52662b5b2af89159d9d319352e9ea21801c002
   languageName: node
   linkType: hard
 
@@ -5172,6 +5182,13 @@ __metadata:
     buffer: "npm:^5.2.1"
     through: "npm:^2.3.8"
   checksum: 10c0/2ea2048f3c9db3499316ccc1d95ff757017ccb6f46c812d7c42466247e3b863fb178864267482f7f178254214247779daf68e85f50bd7736c3c97ba2d58b910a
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~7.16.0":
+  version: 7.16.0
+  resolution: "undici-types@npm:7.16.0"
+  checksum: 10c0/3033e2f2b5c9f1504bdc5934646cb54e37ecaca0f9249c983f7b1fc2e87c6d18399ebb05dc7fd5419e02b2e915f734d872a65da2e3eeed1813951c427d33cc9a
   languageName: node
   linkType: hard
 

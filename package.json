@@ -1,9 +1,9 @@
 {
-  "name": "---",
+  "name": "@jujulego/library-tpl",
   "version": "0.0.0",
   "license": "MIT",
   "author": "Julien Capellari <julien.capellari@gmail.com>",
-  "repository": "github:Jujulego/---",
+  "repository": "github:Jujulego/library-tpl",
   "sideEffects": false,
   "files": [
     "dist"
@@ -34,6 +34,7 @@
     "@microsoft/eslint-formatter-sarif": "3.1.0",
     "@swc/cli": "0.7.9",
     "@swc/core": "1.15.3",
+    "@types/node": "24.10.1",
     "@vitest/coverage-v8": "4.0.13",
     "@vitest/eslint-plugin": "1.4.3",
     "eslint": "9.39.1",

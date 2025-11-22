@@ -1,5 +1,8 @@
-import { expect, test } from 'vitest';
+import { add } from '@/src/index.js';
+import { expect, describe, it } from 'vitest';
 
-test('just to check it works ;)', () => {
-  expect(5 + 5).toBe(10);
+describe('add', () => {
+  it('should add numbers', () => {
+    expect(add(5, 5)).toBe(10);
+  });
 });
