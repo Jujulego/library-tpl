@@ -28,7 +28,7 @@
     "@swc/helpers": "^0.5.0"
   },
   "devDependencies": {
-    "@eslint/js": "9.39.2",
+    "@eslint/js": "9.39.3",
     "@jujulego/jill": "2.5.2",
     "@jujulego/vite-plugin-swc": "1.2.1",
     "@microsoft/eslint-formatter-sarif": "3.1.0",
@@ -37,7 +37,7 @@
     "@types/node": "24.10.13",
     "@vitest/coverage-v8": "4.0.18",
     "@vitest/eslint-plugin": "1.6.9",
-    "eslint": "9.39.2",
+    "eslint": "9.39.3",
     "jiti": "2.6.1",
     "shx": "0.4.0",
     "typescript": "5.9.3",
